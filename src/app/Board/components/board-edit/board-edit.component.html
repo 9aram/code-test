@@ -1,0 +1,29 @@
+<div class="fadein">
+  <h1 class="title">Update Board</h1>
+  <div class="columns">
+    <div class="column">
+      <form #boardForm="ngForm" (ngSubmit)="updateBoard(board._id)">
+        <div class="field">
+          <div class="control">
+            <label for="title">Title</label>
+            <input *ngIf="board" required name="title" id="title" [(ngModel)]="board.title" type="text" class="input">
+            <input *ngIf="!board" required name="title" id="title" type="text" class="input">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label for="author">Author</label>
+            <input *ngIf="board" required name="author" id="author" [(ngModel)]="board.author" type="text" class="input">
+            <input *ngIf="!board" required name="author" id="author" type="text" class="input">
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <button class="button is-warning" routerLink="/boards"><i class="fas fa-arrow-left"></i>Back</button>
+            <button class="button is-link" type="submit" [disabled]="!boardForm.valid">Update</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

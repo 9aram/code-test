@@ -4,9 +4,9 @@ import { Component } from '@angular/core';
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styles: [`
-    .active {
-      background: lightgray;
-    }
+    // .active {
+    //   background: lightgray;
+    // }
   `]
 })
 export class NavbarComponent {
@@ -15,8 +15,8 @@ export class NavbarComponent {
 
   constructor() { }
 
-  toggleBurger() {
-    this.burgerSwitch = !this.burgerSwitch;
-  }
+  // toggleBurger() {
+  //   this.burgerSwitch = !this.burgerSwitch;
+  // }
 
 }

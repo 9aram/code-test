@@ -1,19 +1,20 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from '../Core/components/home/home.component';
-import { BookComponent } from '../Book/components/book/book.component';
-import { BookDetailComponent } from '../Book/components/book-detail/book-detail.component';
-import { BookCreateComponent } from '../Book/components/book-create/book-create.component';
-import { BookEditComponent } from '../Book/components/book-edit/book-edit.component';
+// import { HomeComponent } from '../Core/components/home/home.component';
+import { BoardComponent } from '../Board/components/board/board.component';
+import { BoardDetailComponent } from '../Board/components/board-detail/board-detail.component';
+import { BoardCreateComponent } from '../Board/components/board-create/board-create.component';
+import { BoardEditComponent } from '../Board/components/board-edit/board-edit.component';
 import { NotFoundComponent } from '../Core/components/not-found/not-found.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'books', component: BookComponent },
-  { path: 'book-details/:id', component: BookDetailComponent },
-  { path: 'book-create', component: BookCreateComponent },
-  { path: 'book-edit/:id', component: BookEditComponent },
+  //{ path: '', component: BoardComponent },
+   { path: '', redirectTo: '/boards', pathMatch: 'full' },
+  { path: 'boards', component: BoardComponent },
+  { path: 'board-details/:id', component: BoardDetailComponent },
+  { path: 'board-create', component: BoardCreateComponent },
+  { path: 'board-edit/:id', component: BoardEditComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

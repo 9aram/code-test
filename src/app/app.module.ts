@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './Routing/app.routing.module';
 import { CoreModule } from './Core/core.module';
-import { BookModule } from './Book/book.module';
+import { BoardModule } from './Board/board.module';
 import { SharedModule } from './Shared/shared.module';
 
 import { AppComponent } from './app.component';
@@ -19,7 +19,7 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     AppRoutingModule,
     CoreModule,
-    BookModule,
+    BoardModule,
     SharedModule
   ],
   bootstrap: [AppComponent]

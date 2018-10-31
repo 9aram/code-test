@@ -1,0 +1,19 @@
+<div class="fadein">
+  <h1 class="title">Board List
+    <a [routerLink]="['/board-create']" class="button is-link is-outlined"><i class="fas fa-plus"></i>Add</a>
+  </h1>
+  <table class="table is-striped is-hoverable is-fullwidth">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let board of boards">
+        <td><a class="button is-text" [routerLink]="['/board-details', board._id]">{{ board.title }}</a></td>
+        <td>{{ board.author }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
