@@ -9,10 +9,9 @@ router.get('/', (req, res) => {
 });
 
 // GET ALL BoardS
-router.get('/board', (req, res, next) => {
+router.get('/Board', (req, res, next) => {
     Board.find((err, products) => (err) ? next(err) : res.json(products));
 });
-
 
 // GET A Board
 router.get('/board/:id', (req, res, next) => {

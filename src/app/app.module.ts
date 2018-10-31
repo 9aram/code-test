@@ -7,20 +7,27 @@ import { CoreModule } from './Core/core.module';
 import { BoardModule } from './Board/board.module';
 import { SharedModule } from './Shared/shared.module';
 
+
+
+import {FileUploadModule} from 'ng2-file-upload';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
     BrowserModule,
+    FileUploadModule,
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
     CoreModule,
     BoardModule,
-    SharedModule
+    SharedModule,
+
   ],
   bootstrap: [AppComponent]
 })

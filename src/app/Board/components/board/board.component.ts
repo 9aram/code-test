@@ -16,7 +16,6 @@ export class BoardComponent implements OnInit {
   ngOnInit() {
     this.boardService.getAllBoards()
       .subscribe((data: Board[]) => this.boards = data);
-      //heroes.slice(1, 5));
   }
 
 }
