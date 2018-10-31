@@ -13,6 +13,7 @@ router.get('/board', (req, res, next) => {
     Board.find((err, products) => (err) ? next(err) : res.json(products));
 });
 
+
 // GET A Board
 router.get('/board/:id', (req, res, next) => {
     Board.findById(req.params.id, (err, post) => (err) ? next(err) : res.json(post));
