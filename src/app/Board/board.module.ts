@@ -9,17 +9,23 @@ import { BoardCreateComponent } from './components/board-create/board-create.com
 import { BoardEditComponent } from './components/board-edit/board-edit.component';
 import { BoardService } from './services/board.service';
 
+import {  FileUploader, FileSelectDirective } from 'ng2-file-upload/ng2-file-upload';
+import {FileUploadModule} from "ng2-file-upload";
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
-    RouterModule
+    RouterModule,
+    FileUploadModule
+
   ],
   declarations: [
     BoardComponent,
     BoardDetailComponent,
     BoardCreateComponent,
-    BoardEditComponent
+    BoardEditComponent,
+
   ],
   providers: [
     BoardService

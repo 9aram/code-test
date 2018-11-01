@@ -9,7 +9,6 @@ import { SharedModule } from './Shared/shared.module';
 
 
 
-import {FileUploadModule} from 'ng2-file-upload';
 
 import { AppComponent } from './app.component';
 
@@ -17,10 +16,11 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent,
 
+
   ],
   imports: [
     BrowserModule,
-    FileUploadModule,
+
     FormsModule,
     HttpClientModule,
     AppRoutingModule,
